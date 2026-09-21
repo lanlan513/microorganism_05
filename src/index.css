@@ -158,3 +158,87 @@
     transform: translateY(-10px);
   }
 }
+
+/* ================= 微观交响厅 ================= */
+
+@layer components {
+  /* 首次手势解锁层（自动播放策略） */
+  .unlock-overlay {
+    @apply fixed inset-0 z-[100] flex items-center justify-center
+           bg-background-deep/90 backdrop-blur-md cursor-pointer select-none;
+  }
+
+  /* AudioContext 被系统挂起时的恢复横幅 */
+  .resume-banner {
+    @apply fixed top-20 left-1/2 -translate-x-1/2 z-[90]
+           flex items-center gap-4 px-5 py-3 rounded-full
+           bg-background-card/95 border border-glow-gold/50 backdrop-blur-md
+           font-mono text-sm text-text-light shadow-glow-gold;
+  }
+
+  .resume-banner-btn {
+    @apply px-4 py-1 rounded-full border border-glow-gold/60 text-glow-gold
+           hover:bg-glow-gold/10 transition-colors font-mono text-sm cursor-pointer;
+  }
+
+  /* 标本点听卡片 */
+  .symphony-card {
+    @apply relative glass-card p-4 text-left cursor-pointer
+           transition-all duration-300
+           hover:border-glow-primary/50 hover:-translate-y-1 hover:shadow-glow;
+  }
+
+  .symphony-card-active {
+    @apply border-glow-primary/70 bg-glow-primary/5 shadow-glow;
+  }
+
+  /* 步进可视化：静音 / 减弱动态时的主要反馈通道 */
+  .step-grid {
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    gap: 3px;
+  }
+
+  .step-cell {
+    @apply h-3 rounded-[3px] bg-background-muted/40 transition-colors duration-75;
+  }
+
+  .step-on {
+    @apply bg-glow-primary/30;
+  }
+
+  .step-now {
+    background-color: #00ffc8 !important;
+    box-shadow: 0 0 8px rgba(0, 255, 200, 0.7);
+  }
+
+  .symphony-chip {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full
+           bg-background-muted/40 border border-white/10
+           font-mono text-[10px] text-text-muted;
+  }
+
+  .toast {
+    @apply fixed bottom-8 left-1/2 -translate-x-1/2 z-[110]
+           px-6 py-3 rounded-full max-w-[90vw]
+           bg-background-card/95 border border-glow-primary/40 backdrop-blur-md
+           font-mono text-sm text-text-light shadow-glow
+           animate-fade-in-up;
+  }
+}
+
+/* 系统开启「减弱动态」：停用一切动画与平滑滚动，
+   播放反馈退化为离散高亮 + 文字状态行 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+  }
+}

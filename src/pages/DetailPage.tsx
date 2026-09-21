@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Ruler, MapPin, Sparkles, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Ruler, MapPin, Sparkles, Share2, AudioLines } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { MicrobeCard } from '../components/MicrobeCard';
 import { CATEGORY_LABELS, CATEGORY_COLORS } from '../../shared/types';
@@ -115,12 +115,22 @@ export function DetailPage() {
                     {microbe.scientificName}
                   </p>
                 </div>
-                <button
-                  className="p-3 rounded-full border border-white/10 text-text-muted hover:text-glow-primary hover:border-glow-primary/40 transition-colors"
-                  title="分享"
-                >
-                  <Share2 className="w-5 h-5" />
-                </button>
+                <div className="flex items-center gap-2">
+                  <Link
+                    to={`/symphony?c=${microbe.id}`}
+                    className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-glow-primary/30 text-text-muted hover:text-glow-primary hover:border-glow-primary/60 hover:bg-glow-primary/10 transition-all font-mono text-xs"
+                    title="在微观交响厅聆听这条标本"
+                  >
+                    <AudioLines className="w-4 h-4" />
+                    聆听
+                  </Link>
+                  <button
+                    className="p-3 rounded-full border border-white/10 text-text-muted hover:text-glow-primary hover:border-glow-primary/40 transition-colors"
+                    title="分享"
+                  >
+                    <Share2 className="w-5 h-5" />
+                  </button>
+                </div>
               </div>
             </div>
 

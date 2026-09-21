@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# 微观交响：服务端渲染产物
+data/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
