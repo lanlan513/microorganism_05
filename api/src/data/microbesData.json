@@ -9,7 +9,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microscopic%20view%20of%20Escherichia%20coli%20bacteria%20rod%20shaped%20glowing%20teal%20on%20dark%20background%20scientific%20illustration%20high%20detail&image_size=square_hd",
     "discoveredYear": 1885,
     "size": "约2μm长，0.5μm直径",
-    "characteristics": ["革兰氏阴性", "兼性厌氧", "杆状", "鞭毛运动"]
+    "characteristics": [
+      "革兰氏阴性",
+      "兼性厌氧",
+      "杆状",
+      "鞭毛运动"
+    ],
+    "sizeUm": 2,
+    "tempC": 37,
+    "metabolism": "facultative",
+    "pathogenicity": 1,
+    "pathogenicityNote": "多数菌株为肠道正常菌群，O157:H7 等血清型可致病"
   },
   {
     "id": 2,
@@ -21,7 +31,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=staphylococcus%20aureus%20cocci%20bacteria%20clusters%20golden%20yellow%20glow%20microscope%20view%20dark%20background%20scientific&image_size=square_hd",
     "discoveredYear": 1880,
     "size": "直径约0.5-1.5μm",
-    "characteristics": ["革兰氏阳性", "兼性厌氧", "球形", "葡萄串状排列"]
+    "characteristics": [
+      "革兰氏阳性",
+      "兼性厌氧",
+      "球形",
+      "葡萄串状排列"
+    ],
+    "sizeUm": 1,
+    "tempC": 37,
+    "metabolism": "facultative",
+    "pathogenicity": 2,
+    "pathogenicityNote": "条件致病菌，可致皮肤感染、肺炎与败血症"
   },
   {
     "id": 3,
@@ -33,7 +53,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=bacillus%20subtilis%20rod%20shaped%20bacteria%20with%20spores%20teal%20fluorescent%20dark%20microscopic%20scientific%20illustration&image_size=square_hd",
     "discoveredYear": 1835,
     "size": "长2-3μm，宽0.7-0.8μm",
-    "characteristics": ["革兰氏阳性", "好氧", "产内生孢子", "杆状"]
+    "characteristics": [
+      "革兰氏阳性",
+      "好氧",
+      "产内生孢子",
+      "杆状"
+    ],
+    "sizeUm": 2.5,
+    "tempC": 30,
+    "metabolism": "aerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "非致病，工业与农业常用益生菌"
   },
   {
     "id": 4,
@@ -45,7 +75,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pseudomonas%20aeruginosa%20rod%20bacteria%20blue%20green%20pigment%20fluorescent%20glow%20dark%20microscope%20scientific%20art&image_size=square_hd",
     "discoveredYear": 1882,
     "size": "长1.5-3μm，宽0.5-0.8μm",
-    "characteristics": ["革兰氏阴性", "专性需氧", "产生绿脓素", "极生单鞭毛"]
+    "characteristics": [
+      "革兰氏阴性",
+      "专性需氧",
+      "产生绿脓素",
+      "极生单鞭毛"
+    ],
+    "sizeUm": 2,
+    "tempC": 37,
+    "metabolism": "aerobic",
+    "pathogenicity": 2,
+    "pathogenicityNote": "医院常见条件致病菌，可致肺部及伤口感染"
   },
   {
     "id": 5,
@@ -57,7 +97,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=lactobacillus%20acidophilus%20rod%20shaped%20bacteria%20chains%20soft%20green%20glow%20dark%20background%20microscopic%20artistic&image_size=square_hd",
     "discoveredYear": 1900,
     "size": "长2-10μm，宽0.6-0.9μm",
-    "characteristics": ["革兰氏阳性", "微厌氧", "发酵产乳酸", "益生菌"]
+    "characteristics": [
+      "革兰氏阳性",
+      "微厌氧",
+      "发酵产乳酸",
+      "益生菌"
+    ],
+    "sizeUm": 2,
+    "tempC": 37,
+    "metabolism": "anaerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "益生菌，维持肠道菌群平衡"
   },
   {
     "id": 6,
@@ -69,7 +119,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mycobacterium%20tuberculosis%20slender%20rods%20acid%20fast%20bacteria%20red%20stain%20glow%20dark%20microscope%20scientific&image_size=square_hd",
     "discoveredYear": 1882,
     "size": "长2-4μm，宽0.3-0.6μm",
-    "characteristics": ["抗酸染色阳性", "专性需氧", "细胞壁富含脂质", "胞内寄生"]
+    "characteristics": [
+      "抗酸染色阳性",
+      "专性需氧",
+      "细胞壁富含脂质",
+      "胞内寄生"
+    ],
+    "sizeUm": 3,
+    "tempC": 37,
+    "metabolism": "aerobic",
+    "pathogenicity": 3,
+    "pathogenicityNote": "结核病病原体，呼吸道烈性传染病"
   },
   {
     "id": 7,
@@ -81,7 +141,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vibrio%20cholerae%20curved%20rod%20bacteria%20single%20flagellum%20teal%20glow%20dark%20aquatic%20microscopic%20scientific&image_size=square_hd",
     "discoveredYear": 1854,
     "size": "长1.5-3μm，宽0.3-0.6μm",
-    "characteristics": ["革兰氏阴性", "兼性厌氧", "弧形", "单极鞭毛"]
+    "characteristics": [
+      "革兰氏阴性",
+      "兼性厌氧",
+      "弧形",
+      "单极鞭毛"
+    ],
+    "sizeUm": 2.5,
+    "tempC": 37,
+    "metabolism": "facultative",
+    "pathogenicity": 3,
+    "pathogenicityNote": "霍乱病原体，经水传播可致烈性肠道传染病"
   },
   {
     "id": 8,
@@ -93,7 +163,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=bifidobacterium%20bifidum%20branched%20rod%20bacteria%20Y%20shaped%20warm%20green%20glow%20dark%20microscopic%20friendly%20probiotic&image_size=square_hd",
     "discoveredYear": 1899,
     "size": "长2-8μm，宽0.5-1.0μm",
-    "characteristics": ["革兰氏阳性", "严格厌氧", "分叉形态", "益生菌"]
+    "characteristics": [
+      "革兰氏阳性",
+      "严格厌氧",
+      "分叉形态",
+      "益生菌"
+    ],
+    "sizeUm": 4,
+    "tempC": 37,
+    "metabolism": "anaerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "益生菌，肠道优势菌群之一"
   },
   {
     "id": 9,
@@ -105,7 +185,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=saccharomyces%20cerevisiae%20yeast%20cells%20budding%20round%20shape%20golden%20amber%20glow%20dark%20background%20microscope&image_size=square_hd",
     "discoveredYear": 1680,
     "size": "直径约5-10μm",
-    "characteristics": ["单细胞真菌", "出芽繁殖", "兼性厌氧", "发酵产酒精"]
+    "characteristics": [
+      "单细胞真菌",
+      "出芽繁殖",
+      "兼性厌氧",
+      "发酵产酒精"
+    ],
+    "sizeUm": 8,
+    "tempC": 30,
+    "metabolism": "facultative",
+    "pathogenicity": 0,
+    "pathogenicityNote": "非致病，酿造与烘焙模式生物"
   },
   {
     "id": 10,
@@ -117,7 +207,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=aspergillus%20niger%20mold%20fungus%20conidial%20heads%20black%20spores%20dark%20background%20microscopic%20artistic%20purple%20glow&image_size=square_hd",
     "discoveredYear": 1867,
     "size": "分生孢子头直径约300-1000μm",
-    "characteristics": ["丝状真菌", "产黑色孢子", "好氧", "产柠檬酸"]
+    "characteristics": [
+      "丝状真菌",
+      "产黑色孢子",
+      "好氧",
+      "产柠檬酸"
+    ],
+    "sizeUm": 40,
+    "tempC": 25,
+    "metabolism": "aerobic",
+    "pathogenicity": 1,
+    "pathogenicityNote": "条件致病，免疫低下时可致曲霉病"
   },
   {
     "id": 11,
@@ -129,7 +229,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=penicillium%20chrysogenum%20mold%20brush%20like%20conidiophores%20blue%20green%20spores%20purple%20ambient%20glow%20dark%20microscope&image_size=square_hd",
     "discoveredYear": 1928,
     "size": "分生孢子梗长约200-300μm",
-    "characteristics": ["丝状真菌", "帚状分生孢子头", "产青霉素", "蓝绿色菌落"]
+    "characteristics": [
+      "丝状真菌",
+      "帚状分生孢子头",
+      "产青霉素",
+      "蓝绿色菌落"
+    ],
+    "sizeUm": 30,
+    "tempC": 24,
+    "metabolism": "aerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "非致病，青霉素生产菌"
   },
   {
     "id": 12,
@@ -141,7 +251,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=candida%20albicans%20yeast%20cells%20and%20hyphae%20white%20cream%20colored%20purple%20fluorescent%20dark%20microscopic%20scientific&image_size=square_hd",
     "discoveredYear": 1853,
     "size": "酵母态直径约4-6μm",
-    "characteristics": ["双态性真菌", "条件致病", "形成生物膜", "酵母-菌丝转换"]
+    "characteristics": [
+      "双态性真菌",
+      "条件致病",
+      "形成生物膜",
+      "酵母-菌丝转换"
+    ],
+    "sizeUm": 6,
+    "tempC": 37,
+    "metabolism": "facultative",
+    "pathogenicity": 2,
+    "pathogenicityNote": "条件致病，可致鹅口疮与系统性念珠菌病"
   },
   {
     "id": 13,
@@ -153,7 +273,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=agaricus%20bisporus%20button%20mushroom%20white%20cap%20elegant%20dark%20moody%20background%20botanical%20illustration%20purple%20glow&image_size=square_hd",
     "discoveredYear": 1707,
     "size": "菌盖直径约5-10cm",
-    "characteristics": ["担子菌门", "伞状子实体", "异养腐生", "食用真菌"]
+    "characteristics": [
+      "担子菌门",
+      "伞状子实体",
+      "异养腐生",
+      "食用真菌"
+    ],
+    "sizeUm": 90000,
+    "tempC": 22,
+    "metabolism": "aerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "食用真菌，非致病"
   },
   {
     "id": 14,
@@ -165,7 +295,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ganoderma%20lucidum%20reishi%20mushroom%20reddish%20brown%20lacquered%20cap%20dark%20mystical%20background%20golden%20purple%20ambient&image_size=square_hd",
     "discoveredYear": 1881,
     "size": "菌盖直径约5-30cm",
-    "characteristics": ["多孔菌科", "药用真菌", "漆样光泽", "多年生"]
+    "characteristics": [
+      "多孔菌科",
+      "药用真菌",
+      "漆样光泽",
+      "多年生"
+    ],
+    "sizeUm": 30000,
+    "tempC": 28,
+    "metabolism": "aerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "药用真菌，非致病"
   },
   {
     "id": 15,
@@ -177,7 +317,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=bacteriophage%20T4%20virus%20lander%20shape%20capsid%20tail%20fibers%20glowing%20red%20orange%20dark%20space%20background%20scientific%203d&image_size=square_hd",
     "discoveredYear": 1915,
     "size": "头部约90nm宽，尾部约100nm长",
-    "characteristics": ["DNA病毒", "烈性噬菌体", "蝌蚪形态", "感染大肠杆菌"]
+    "characteristics": [
+      "DNA病毒",
+      "烈性噬菌体",
+      "蝌蚪形态",
+      "感染大肠杆菌"
+    ],
+    "sizeUm": 0.2,
+    "tempC": 37,
+    "metabolism": "anaerobic",
+    "pathogenicity": 1,
+    "pathogenicityNote": "感染大肠杆菌的噬菌体，对人不致病但具侵袭性"
   },
   {
     "id": 16,
@@ -189,7 +339,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=tobacco%20mosaic%20virus%20TMV%20long%20rod%20shaped%20helical%20structure%20red%20orange%20glow%20dark%20microscopic%203d%20render&image_size=square_hd",
     "discoveredYear": 1892,
     "size": "长约300nm，直径约18nm",
-    "characteristics": ["RNA病毒", "杆状颗粒", "植物病毒", "螺旋对称"]
+    "characteristics": [
+      "RNA病毒",
+      "杆状颗粒",
+      "植物病毒",
+      "螺旋对称"
+    ],
+    "sizeUm": 0.3,
+    "tempC": 24,
+    "metabolism": "anaerobic",
+    "pathogenicity": 1,
+    "pathogenicityNote": "植物病毒，对人不致病"
   },
   {
     "id": 17,
@@ -201,7 +361,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=influenza%20virus%20spherical%20particle%20surface%20spikes%20HA%20NA%20red%20orange%20fluorescent%20dark%20microscopic%203d%20medical&image_size=square_hd",
     "discoveredYear": 1933,
     "size": "直径约80-120nm",
-    "characteristics": ["分节段RNA病毒", "包膜病毒", "抗原漂移/转变", "呼吸道传播"]
+    "characteristics": [
+      "分节段RNA病毒",
+      "包膜病毒",
+      "抗原漂移/转变",
+      "呼吸道传播"
+    ],
+    "sizeUm": 0.1,
+    "tempC": 33,
+    "metabolism": "anaerobic",
+    "pathogenicity": 3,
+    "pathogenicityNote": "流感病原体，季节性呼吸道传染病"
   },
   {
     "id": 18,
@@ -213,7 +383,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=SARS-CoV-2%20coronavirus%20spike%20proteins%20crown%20shape%20red%20orange%20glow%20dark%20background%203d%20scientific%20medical&image_size=square_hd",
     "discoveredYear": 2020,
     "size": "直径约60-140nm",
-    "characteristics": ["正链RNA病毒", "包膜病毒", "刺突蛋白冠状排列", "高度传染"]
+    "characteristics": [
+      "正链RNA病毒",
+      "包膜病毒",
+      "刺突蛋白冠状排列",
+      "高度传染"
+    ],
+    "sizeUm": 0.12,
+    "tempC": 33,
+    "metabolism": "anaerobic",
+    "pathogenicity": 3,
+    "pathogenicityNote": "新冠病原体，呼吸道传染病"
   },
   {
     "id": 19,
@@ -225,7 +405,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=HIV%20AIDS%20virus%20spherical%20envelope%20glycoprotein%20spikes%20red%20orange%20dark%20medical%20illustration%203d%20render&image_size=square_hd",
     "discoveredYear": 1983,
     "size": "直径约100-120nm",
-    "characteristics": ["逆转录RNA病毒", "包膜病毒", "感染CD4+ T细胞", "性接触/血液传播"]
+    "characteristics": [
+      "逆转录RNA病毒",
+      "包膜病毒",
+      "感染CD4+ T细胞",
+      "性接触/血液传播"
+    ],
+    "sizeUm": 0.12,
+    "tempC": 37,
+    "metabolism": "anaerobic",
+    "pathogenicity": 3,
+    "pathogenicityNote": "艾滋病病原体，攻击免疫系统"
   },
   {
     "id": 20,
@@ -237,7 +427,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=adenovirus%20icosahedral%20capsid%20fiber%20spikes%20satellite%20like%20red%20orange%20glow%20dark%20background%203d%20scientific&image_size=square_hd",
     "discoveredYear": 1953,
     "size": "直径约70-90nm",
-    "characteristics": ["双链DNA病毒", "无包膜", "正二十面体", "纤维刺突"]
+    "characteristics": [
+      "双链DNA病毒",
+      "无包膜",
+      "正二十面体",
+      "纤维刺突"
+    ],
+    "sizeUm": 0.09,
+    "tempC": 37,
+    "metabolism": "anaerobic",
+    "pathogenicity": 2,
+    "pathogenicityNote": "常见呼吸道与眼部感染病原体"
   },
   {
     "id": 21,
@@ -249,7 +449,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=methanococcus%20jannaschii%20archaea%20cocci%20cells%20deep%20sea%20hydrothermal%20vent%20golden%20yellow%20glow%20dark%20microscope%20exotic&image_size=square_hd",
     "discoveredYear": 1983,
     "size": "直径约1.5μm",
-    "characteristics": ["产甲烷古菌", "极端嗜热", "严格厌氧", "化能自养"]
+    "characteristics": [
+      "产甲烷古菌",
+      "极端嗜热",
+      "严格厌氧",
+      "化能自养"
+    ],
+    "sizeUm": 1,
+    "tempC": 85,
+    "metabolism": "anaerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "深海热泉古菌，非致病"
   },
   {
     "id": 22,
@@ -261,7 +471,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=sulfolobus%20acidocaldarius%20archaea%20irregular%20cells%20hot%20spring%20acidic%20golden%20yellow%20orange%20glow%20dark%20volcanic%20microscope&image_size=square_hd",
     "discoveredYear": 1972,
     "size": "直径约0.8-1.5μm",
-    "characteristics": ["嗜热嗜酸", "氧化硫获得能量", "无细胞壁", "S层蛋白晶格"]
+    "characteristics": [
+      "嗜热嗜酸",
+      "氧化硫获得能量",
+      "无细胞壁",
+      "S层蛋白晶格"
+    ],
+    "sizeUm": 1.2,
+    "tempC": 70,
+    "metabolism": "aerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "嗜酸嗜热古菌，非致病"
   },
   {
     "id": 23,
@@ -273,7 +493,17 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=halobacterium%20salinarum%20rod%20shaped%20archaea%20purple%20red%20membrane%20salt%20crystals%20golden%20pink%20glow%20dark%20microscopic&image_size=square_hd",
     "discoveredYear": 1919,
     "size": "长约2-5μm，宽约0.5-1.0μm",
-    "characteristics": ["极端嗜盐", "杆状形态", "含细菌视紫红质", "耐辐射"]
+    "characteristics": [
+      "极端嗜盐",
+      "杆状形态",
+      "含细菌视紫红质",
+      "耐辐射"
+    ],
+    "sizeUm": 5,
+    "tempC": 37,
+    "metabolism": "aerobic",
+    "pathogenicity": 0,
+    "pathogenicityNote": "高盐环境古菌，非致病"
   },
   {
     "id": 24,
@@ -285,6 +515,16 @@
     "imageUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pyrococcus%20furiosus%20archaea%20cocci%20cells%20clusters%20extreme%20thermophile%20bright%20gold%20yellow%20fire%20glow%20dark%20submarine%20microscope&image_size=square_hd",
     "discoveredYear": 1986,
     "size": "直径约0.8-2.0μm",
-    "characteristics": ["超嗜热", "严格厌氧", "异养发酵", "含Pfu聚合酶"]
+    "characteristics": [
+      "超嗜热",
+      "严格厌氧",
+      "异养发酵",
+      "含Pfu聚合酶"
+    ],
+    "sizeUm": 1,
+    "tempC": 100,
+    "metabolism": "anaerobic",
+    "pathogenicity": 1,
+    "pathogenicityNote": "极端嗜热古菌本身非致病，高温代谢极具侵袭性"
   }
 ]

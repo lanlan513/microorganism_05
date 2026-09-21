@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Ruler, MapPin, Sparkles, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Ruler, MapPin, Sparkles, Share2, Music4, Plus } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { MicrobeCard } from '../components/MicrobeCard';
 import { CATEGORY_LABELS, CATEGORY_COLORS } from '../../shared/types';
@@ -157,6 +157,46 @@ export function DetailPage() {
                 <p className="font-display text-lg font-semibold text-text-light leading-tight">
                   {microbe.habitat}
                 </p>
+              </div>
+            </div>
+
+            <div className="glass-card p-8 mb-10 relative overflow-hidden">
+              <div
+                className="absolute -top-20 -right-20 w-52 h-52 rounded-full blur-3xl opacity-20"
+                style={{ background: color }}
+              />
+              <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center border shrink-0"
+                    style={{ borderColor: `${color}55`, background: `${color}12` }}
+                  >
+                    <Music4 className="w-6 h-6" style={{ color }} />
+                  </div>
+                  <div>
+                    <h2 className="font-display text-2xl font-semibold text-text-light mb-1">
+                      聆听这条标本
+                    </h2>
+                    <p className="font-mono text-sm text-text-muted leading-relaxed max-w-xl">
+                      大小 {microbe.sizeUm}μm 决定音高、最适 {microbe.tempC}°C 决定音色、
+                      {microbe.metabolism === 'aerobic' ? '需氧代谢' : microbe.metabolism === 'anaerobic' ? '厌氧代谢' : '兼性代谢'}
+                      决定节奏、致病性等级 {microbe.pathogenicity}/3 决定和声紧张度。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-3 shrink-0">
+                  <Link to={`/symphony?ids=${microbe.id}`} className="btn-primary !px-6 !py-2.5 text-sm whitespace-nowrap">
+                    <Music4 className="w-4 h-4" />
+                    单独聆听
+                  </Link>
+                  <Link
+                    to="/symphony"
+                    className="btn-primary-ghost !px-5 !py-2.5 text-sm whitespace-nowrap"
+                  >
+                    <Plus className="w-4 h-4" />
+                    去组微观交响
+                  </Link>
+                </div>
               </div>
             </div>
 

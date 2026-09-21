@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Dna, Search, Menu, X } from 'lucide-react';
+import { Home, Dna, Music4, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export function Navbar() {
@@ -15,6 +15,7 @@ export function Navbar() {
 
   const navItems = [
     { to: '/', label: '首页大厅', icon: Home },
+    { to: '/symphony', label: '微观交响', icon: Music4 },
     { to: '/category/bacteria', label: '细菌', icon: Dna },
     { to: '/category/fungi', label: '真菌', icon: Dna },
     { to: '/category/virus', label: '病毒', icon: Dna },
@@ -77,10 +78,13 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full border border-glow-primary/20 text-text-muted hover:text-glow-primary hover:border-glow-primary/40 transition-all text-sm font-mono">
-            <Search className="w-4 h-4" />
-            <span>搜索标本</span>
-          </button>
+          <Link
+            to="/symphony"
+            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-glow-primary/30 text-glow-primary bg-glow-primary/5 hover:bg-glow-primary/15 hover:border-glow-primary/60 transition-all text-sm font-mono"
+          >
+            <Music4 className="w-4 h-4" />
+            <span>微观交响</span>
+          </Link>
           <button
             className="lg:hidden p-2 rounded-lg border border-glow-primary/20 text-text-light"
             onClick={() => setMobileOpen(!mobileOpen)}

@@ -25,6 +25,15 @@ export interface Microbe {
   discoveredYear: number;
   size: string;
   characteristics: string[];
+  /** 声音映射原始字段：典型体长 μm */
+  sizeUm: number;
+  /** 最适生长温度 °C */
+  tempC: number;
+  /** 代谢类型：需氧 / 厌氧 / 兼性 */
+  metabolism: 'aerobic' | 'anaerobic' | 'facultative';
+  /** 致病性等级 0-3 */
+  pathogenicity: 0 | 1 | 2 | 3;
+  pathogenicityNote?: string;
 }
 
 export interface Stats {

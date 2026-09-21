@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 import { CategoryPage } from './pages/CategoryPage';
 import { DetailPage } from './pages/DetailPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { SymphonyPage } from './pages/SymphonyPage';
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/category/:category" element={<CategoryPage />} />
             <Route path="/microbe/:id" element={<DetailPage />} />
+            <Route path="/symphony" element={<SymphonyPage />} />
+            <Route path="/symphony/:token" element={<SymphonyPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

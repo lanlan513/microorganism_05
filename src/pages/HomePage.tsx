@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Sparkles, Microscope, Globe2 } from 'lucide-react';
+import { ChevronDown, Sparkles, Microscope, Globe2, Music4 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { MicrobeCard } from '../components/MicrobeCard';
 import { CategoryCard } from '../components/CategoryCard';
@@ -55,6 +55,10 @@ export function HomePage() {
               <Link to="/category/bacteria" className="btn-primary">
                 <Microscope className="w-5 h-5" />
                 开始探索
+              </Link>
+              <Link to="/symphony" className="btn-primary-ghost">
+                <Music4 className="w-4 h-4" />
+                微观交响
               </Link>
               <a href="#categories" className="btn-primary-ghost">
                 <Globe2 className="w-4 h-4" />
